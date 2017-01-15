@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<title>主页 - WMPlayer音乐播放器</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
+<link rel="stylesheet" href="static/css/style.css">
+<link rel="stylesheet" href="static/css/prism.css">
+<link rel="stylesheet" href="static/css/wmplayer.min.css">
+<link rel="shortcut icon" href="favicon.ico">
+</head>
+<body class="fixed-nav">
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="index.html"><img src="static/img/logo_w.png" alt="logo" class="logo-img"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="download.html">下载</a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">文档 <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="documentation.html">全部</a></li>
+						<li class="divider"></li>
+						<li><a href="documentation.html#introduce">介绍</a></li>
+						<li><a href="documentation.html#start">开始使用</a></li>
+						<li><a href="documentation.html#diy">自定义</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="http://git.oschina.net/0936zz/WMPlayer/" target="_blank"><span class="fa fa-git fa-lg"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="jumbotron">
+	<div class="container">
+		<h1>WMPlayer音乐播放器</h1>
+		<p>高度可定制的Web音乐播放器</p>
+		<p class="btn-group hidden-xs">
+			<a class="btn btn-primary btn-lg" href="http://git.oschina.net/0936zz/WMPlayer/" target="_blank"><span class="fa fa-git fa-lg"></span> 在码云上查看</a>
+			<a class="btn btn-primary btn-lg" href="download.html"><span class="fa fa-download fa-lg"></span> 下载</a>
+		</p>
+		<p class="btn-group visible-xs">
+			<a class="btn btn-primary" href="http://git.oschina.net/0936zz/WMPlayer/" target="_blank"><span class="fa fa-git"></span> 码云</a>
+			<a class="btn btn-primary" href="download.html"><span class="fa fa-download fa-lg"></span> 下载</a>
+		</p>
+	</div>
+</div>
+<div class="container" id="con">
+	<div class="row text-center">
+		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+			<img src="static/img/lrc.png" alt="describe image" class="desc img-responsive">
+			<h3>LRC歌词</h3>
+			<p>歌词实时同步，麻麻再也不怕我听不懂歌词了</p>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+			<img src="static/img/list.png" alt="describe image" class="desc img-responsive">
+			<h3>多列表功能</h3>
+			<p>多个列表随心换，想听哪个就听哪个，就这么任性！</p>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+			<img src="static/img/mode.png" alt="describe image" class="desc img-responsive">
+			<h3>多种播放模式</h3>
+			<p>随机、列表、循环、单曲四种播放模式随心切换，最接近客户端的体验！</p>
+		</div>
+		<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+			<img src="static/img/style.png" alt="describe image" class="desc img-responsive">
+			<h3>样式自定义</h3>
+			<p>这可能是最方便二次开发的音乐播放器插件了。</p>
+		</div>
+	</div>
+	<h2>未来可能会添加的功能</h2>
+	<div class="table-responsive">
+		<table class="table table-hover table-striped">
+			<tr>
+				<th>功能</th>
+				<th>状态</th>
+			</tr>
+			<tr>
+				<td>AJAX获取歌词</td>
+				<td>制作中</td>
+			</tr>
+			<tr>
+				<td>播放记忆</td>
+				<td>制作中</td>
+			</tr>
+			<tr>
+				<td>快捷键绑定</td>
+				<td>未开工</td>
+			</tr>
+			<tr>
+				<td>兼容低版本IE</td>
+				<td>未开工</td>
+			</tr>
+			<tr>
+				<td>悬浮歌词</td>
+				<td>已实现，详见<a href="http://git.oschina.net/0936zz/WMPlayer/wikis/悬浮歌词" target="_blank">Wiki</a></td>
+			</tr>
+			<tr>
+				<td>移动端优化</td>
+				<td>由于本插件可高度自定义，您可以自己写样式适配手机端</td>
+			</tr>
+		</table>
+	</div>
+	<p>没有您想要的功能？请<a href="http://git.oschina.net/0936zz/WMPlayer/issues/new" target="_blank">发issue</a>告诉我，我会第一时间回复您</p>
+</div>
+<footer class="bg-primary">
+	<div class="container">
+		<p class="pull-right">
+			<a href="http://git.oschina.net/0936zz/WMPlayer/" target="_blank"><span class="fa fa-git fa-3x"></span></a>
+			&nbsp;&nbsp;
+			<a href="#"><span class="fa fa-arrow-circle-up fa-3x"></span></a>
+		</p>
+		<div class="copy">
+			<p>&copy;2016 <a href="http://git.oschina.net/0936zz/" target="_blank">0936zz</a> All rights reserved | 翻版必究</p>
+			<p>Powered By <a target="_blank" href="http://getbootstrap.com">Bootstrap</a></p>
+		</div>
+	</div>
+</footer>
+<div class="wm">
+	<div class="wm-box">
+		<img src="static/img/wmplayer_error.png" alt="music cover" class="wm-cover">
+		<div class="wm-info">
+			<p class="wm-name">歌名</p>
+			<p class="wm-singer">歌手</p>
+			<p><span class="wm-time-current">00:00</span>/<span class="wm-time-all">00:00</span></p>
+		</div>
+		<div class="wm-btn">
+			<button class="wm-prev" title="上一首"></button>
+			<button class="wm-pause" title="播放"></button>
+			<button class="wm-next" title="下一首"></button>
+			<button class="wm-mode" title="播放模式"></button>
+			<div class="wm-vol">
+				<button class="wm-vol-img" title="静音"></button>
+				<div class="wm-vol-range" data-range_min="0" data-range_max="100" data-cur_min="80">
+					<div class="wm-vol-current"></div>
+					<div class="wm-vol-circle"></div>
+				</div>
+			</div>
+		</div>
+		<div class="wm-pro">
+			<div class="wm-pro-current"></div>
+		</div>
+		<div class="wm-menu">
+			<button class="wm-list-toggle"></button>
+			<button class="wm-lrc-toggle"></button>
+		</div>
+	</div>
+	<button class="wm-toggle">
+		<span class="wm-toggle-img"></span>
+	</button>
+	<div class="wm-list-box">
+		<ul class="wm-list-title"></ul>
+		<table class="wm-list-table">
+			<thead>
+				<tr>
+					<th>歌名</th>
+					<th>歌手</th>
+					<th>时长</th>
+				</tr>
+			</thead>
+			<tbody class="wm-list"></tbody>
+		</table>
+	</div>
+</div>
+<div class="wm-float">
+	<ul class="wm-lrc" wm-time="100"></ul>
+</div>
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//cdn.bootcss.com/jquery-nstslider/1.0.13/jquery.nstSlider.min.js"></script>
+<script src="static/js/page.js"></script>
+<script src="static/js/prism.js"></script>
+<script src="static/js/wmplayer.min.js"></script>
+<script src="static/js/wmplayer-list.js"></script>
+</body>
+</html>
