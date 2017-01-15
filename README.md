@@ -47,7 +47,7 @@ var player = new WMPlayer({
 ```
 详情请参考[文档][2]
 
-## 特别感谢
+## 赞助列表
 微信`@gh_3dfda90e39d6`赞助
 
 ## 截图
@@ -88,15 +88,14 @@ var player = new WMPlayer({
 
 ## 感谢
 MPlayer播放器完整版使用了以下开源项目
-|x|项目|开源协议|
-|:-:|:-:|:-:|
-|1|[jQuery][5]|MIT|
-|2|[Feather][6]|MIT|
-|3|[jQuery.nstSlide.js][7]|MIT|
+x|项目|开源协议
+-|-|-
+1|[jQuery][5]|MIT
+2|[Feather][6]|MIT
+3|[jQuery.nstSlide.js][7]|MIT
 
 ## 即将更新
-1. ajax加载歌词
-2. 歌曲播放记忆功能
+1. 歌曲播放记忆功能
 
 欢迎[发issue][8]提交您想要的功能
 
@@ -105,12 +104,12 @@ MPlayer播放器完整版使用了以下开源项目
 ![qrcode][9]
 
 
-[1]: http://0936zz.oschina.io/WMPlayer/static/img/logo_w.png
-[2]: http://0936zz.oschina.io/WMPlayer/
-[3]: http://0936zz.oschina.io/WWPlayer/static/img/screenshot.png
+[1]: http://0936zz.oschina.io/wmplayer/static/img/logo_w.png
+[2]: http://0936zz.oschina.io/wmplayer/
+[3]: http://0936zz.oschina.io/wmplayer/static/img/screenshot.png
 [4]: https://git.oschina.net/0936zz/WMPlayer/archive/master.zip
 [5]: http://jquery.com/
 [6]: http://colebemis.com/feather/
 [7]: http://lokku.github.io/jquery-nstslider/
 [8]: https://git.oschina.net/0936zz/WMPlayer/issues/new/
-[9]: http://0936zz.oschina.io/WMPlayer/static/img/qrcode.png
+[9]: http://0936zz.oschina.io/wmplayer/static/img/qrcode.png
