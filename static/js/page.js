@@ -100,7 +100,7 @@ $(function() {
 		containerSelector: '.wm,.wm-float',
 		songList: wmplayer_song,
 		defaultImg: 'static/img/wmplayer_error.png',
-		autoPlay: false,
+		autoPlay: true,
 		playMode:2,
 		playList:0,
 		playSong:0,
